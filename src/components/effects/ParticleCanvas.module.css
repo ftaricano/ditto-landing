@@ -1,0 +1,21 @@
+.canvas,
+.fallback {
+  height: 100%;
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+}
+
+.fallback {
+  background:
+    radial-gradient(circle at 72% 42%, rgba(20, 184, 166, 0.18), transparent 28%),
+    radial-gradient(circle at 24% 56%, rgba(148, 163, 184, 0.2), transparent 30%);
+}
+
+.cta-dark {
+  background:
+    radial-gradient(circle at 74% 36%, rgba(20, 184, 166, 0.22), transparent 30%),
+    radial-gradient(circle at 30% 70%, rgba(20, 184, 166, 0.12), transparent 24%);
+}
+

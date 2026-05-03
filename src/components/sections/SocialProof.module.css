@@ -1,0 +1,75 @@
+.inner {
+  display: grid;
+  gap: var(--ditto-space-3xl);
+}
+
+.quote {
+  display: grid;
+  gap: var(--ditto-space-lg);
+  margin-inline: auto;
+  max-width: 860px;
+  text-align: center;
+}
+
+.quote blockquote {
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.08;
+  margin: 0;
+}
+
+.quote cite {
+  color: var(--ditto-text-secondary);
+  font-style: normal;
+}
+
+.stats {
+  display: grid;
+  gap: var(--ditto-grid-gutter);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stats div {
+  border-top: 1px solid var(--ditto-outline-variant);
+  display: grid;
+  gap: var(--ditto-space-xs);
+  padding-top: var(--ditto-space-lg);
+}
+
+.stats strong {
+  color: var(--ditto-signal-700);
+  font-family: var(--ditto-font-mono);
+  font-size: var(--ditto-text-h2);
+}
+
+.stats span {
+  color: var(--ditto-text-secondary);
+}
+
+.logos {
+  display: grid;
+  gap: var(--ditto-space-md);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.logos span {
+  background: var(--ditto-button-secondary-bg);
+  border: 1px solid var(--ditto-outline-variant);
+  border-radius: var(--ditto-corner-lg);
+  color: var(--ditto-text-tertiary);
+  font-family: var(--ditto-font-mono);
+  font-size: var(--ditto-text-caption);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: var(--ditto-space-lg);
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .stats,
+  .logos {
+    grid-template-columns: 1fr;
+  }
+}
+

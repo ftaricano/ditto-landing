@@ -1,0 +1,94 @@
+:root {
+  --ditto-paper: #ffffff;
+  --ditto-paper-translucent: rgba(255, 255, 255, 0.85);
+  --ditto-ink: #0a0e14;
+  --ditto-ink-translucent: rgba(10, 14, 20, 0.92);
+  --ditto-text-primary: #0a0e14;
+  --ditto-text-secondary: #475569;
+  --ditto-text-tertiary: #94a3b8;
+  --ditto-text-on-ink: #f8fafc;
+  --ditto-text-on-ink-secondary: #cbd5e1;
+  --ditto-signal-50: #f0fdfa;
+  --ditto-signal-100: #ccfbf1;
+  --ditto-signal-300: #5eead4;
+  --ditto-signal-500: #14b8a6;
+  --ditto-signal-600: #0d9488;
+  --ditto-signal-700: #0f766e;
+  --ditto-noise-300: #cbd5e1;
+  --ditto-noise-400: #94a3b8;
+  --ditto-noise-500: #64748b;
+  --ditto-outline-variant: rgba(10, 14, 20, 0.08);
+  --ditto-outline-strong: rgba(10, 14, 20, 0.16);
+  --ditto-button-primary-bg: var(--ditto-ink);
+  --ditto-button-primary-fg: var(--ditto-paper);
+  --ditto-button-primary-hover: #1e293b;
+  --ditto-button-secondary-bg: rgba(10, 14, 20, 0.04);
+  --ditto-button-secondary-fg: var(--ditto-ink);
+  --ditto-button-accent-bg: var(--ditto-signal-500);
+  --ditto-button-accent-fg: #ffffff;
+  --ditto-button-accent-hover: var(--ditto-signal-600);
+  --ditto-glass-bg: rgba(255, 255, 255, 0.85);
+  --ditto-glass-blur: 8px;
+  --ditto-glass-bg-dark: rgba(10, 14, 20, 0.72);
+  --ditto-overlay-soft: rgba(10, 14, 20, 0.06);
+  --ditto-overlay-strong: rgba(10, 14, 20, 0.8);
+
+  --ditto-space-2xs: 4px;
+  --ditto-space-xs: 8px;
+  --ditto-space-sm: 12px;
+  --ditto-space-md: 16px;
+  --ditto-space-lg: 24px;
+  --ditto-space-xl: 32px;
+  --ditto-space-2xl: 48px;
+  --ditto-space-3xl: 64px;
+  --ditto-space-4xl: 96px;
+  --ditto-space-5xl: 144px;
+  --ditto-space-6xl: 200px;
+  --ditto-space-7xl: 288px;
+  --ditto-page-margin: clamp(20px, 5vw, 80px);
+  --ditto-grid-gutter: 24px;
+  --ditto-content-max: 1200px;
+  --ditto-prose-max: 720px;
+
+  --ditto-corner-sm: 8px;
+  --ditto-corner-md: 12px;
+  --ditto-corner-lg: 20px;
+  --ditto-corner-xl: 32px;
+  --ditto-corner-pill: 999px;
+
+  --ditto-shadow-sm: 0 1px 2px rgba(10, 14, 20, 0.04);
+  --ditto-shadow-md: 0 4px 12px rgba(10, 14, 20, 0.06);
+  --ditto-shadow-lg: 0 12px 32px rgba(10, 14, 20, 0.08);
+  --ditto-shadow-glow-signal: 0 0 32px rgba(20, 184, 166, 0.24);
+
+  --ditto-ease-snap: cubic-bezier(0.2, 0, 0, 1);
+  --ditto-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ditto-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ditto-dur-snap: 150ms;
+  --ditto-dur-fast: 200ms;
+  --ditto-dur-base: 300ms;
+  --ditto-dur-slow: 600ms;
+  --ditto-dur-reveal: 800ms;
+
+  --ditto-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ditto-font-mono: 'JetBrains Mono', Menlo, monospace;
+  --ditto-text-display: clamp(3rem, 6vw, 5rem);
+  --ditto-text-h1: clamp(2.25rem, 4.5vw, 3.5rem);
+  --ditto-text-h2: clamp(1.75rem, 3vw, 2.5rem);
+  --ditto-text-h3: clamp(1.25rem, 2vw, 1.625rem);
+  --ditto-text-body-lg: 1.125rem;
+  --ditto-text-body: 1rem;
+  --ditto-text-body-sm: 0.875rem;
+  --ditto-text-caption: 0.75rem;
+  --ditto-text-mono: 0.875rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ditto-dur-snap: 0ms;
+    --ditto-dur-fast: 0ms;
+    --ditto-dur-base: 0ms;
+    --ditto-dur-slow: 0ms;
+    --ditto-dur-reveal: 0ms;
+  }
+}

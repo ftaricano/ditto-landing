@@ -1,0 +1,120 @@
+.hero {
+  align-items: center;
+  min-height: 100svh;
+  overflow: hidden;
+  padding-block: var(--ditto-space-5xl) var(--ditto-space-3xl);
+  position: relative;
+}
+
+.inner {
+  display: grid;
+  gap: var(--ditto-space-4xl);
+  position: relative;
+  z-index: 1;
+}
+
+.copy {
+  display: grid;
+  gap: var(--ditto-space-lg);
+  max-width: 760px;
+}
+
+.copy h1 {
+  display: grid;
+  gap: var(--ditto-space-xs);
+}
+
+.line {
+  display: block;
+}
+
+.copy p {
+  font-size: var(--ditto-text-body-lg);
+  max-width: 650px;
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ditto-space-sm);
+}
+
+.trust {
+  align-items: center;
+  border-top: 1px solid var(--ditto-outline-variant);
+  display: grid;
+  gap: var(--ditto-space-lg);
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 900px;
+  padding-top: var(--ditto-space-lg);
+}
+
+.trust span {
+  color: var(--ditto-text-tertiary);
+  filter: grayscale(1);
+  font-family: var(--ditto-font-mono);
+  font-size: var(--ditto-text-caption);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .line,
+  .copy p,
+  .ctas {
+    animation: fadeUp var(--ditto-dur-slow) var(--ditto-ease-out) both;
+  }
+
+  .lineOne {
+    animation-delay: 200ms;
+  }
+
+  .lineTwo {
+    animation-delay: 500ms;
+  }
+
+  .copy p {
+    animation-delay: 680ms;
+  }
+
+  .ctas {
+    animation-delay: 840ms;
+  }
+}
+
+@media (max-width: 1023px) {
+  .copy {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .ctas {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding-block: calc(var(--ditto-space-4xl) + var(--ditto-space-lg)) calc(var(--ditto-space-2xl) + var(--ditto-space-xs));
+  }
+
+  .trust {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+
+  .ctas {
+    flex-direction: column;
+  }
+}

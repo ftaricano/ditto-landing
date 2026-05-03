@@ -1,0 +1,7 @@
+.container {
+  margin-inline: auto;
+  max-width: var(--ditto-content-max);
+  padding-inline: var(--ditto-page-margin);
+  width: 100%;
+}
+

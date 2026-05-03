@@ -1,0 +1,25 @@
+.wrapper {
+  color: var(--ditto-signal-500);
+  height: calc(16vw + 150px);
+  margin-block: -54px -86px;
+  opacity: 0.62;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.wrapper svg {
+  height: 100%;
+  width: 100%;
+}
+
+.waveA,
+.waveB {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 1.5;
+}
+
+.waveB {
+  opacity: 0.34;
+}

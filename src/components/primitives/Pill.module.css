@@ -1,0 +1,16 @@
+.pill {
+  align-items: center;
+  background: var(--ditto-signal-50);
+  border: 1px solid var(--ditto-signal-100);
+  border-radius: var(--ditto-corner-pill);
+  color: var(--ditto-signal-700);
+  display: inline-flex;
+  font-family: var(--ditto-font-mono);
+  font-size: var(--ditto-text-caption);
+  font-weight: 700;
+  gap: var(--ditto-space-xs);
+  letter-spacing: 0.04em;
+  padding: 8px 12px;
+  text-transform: uppercase;
+}
+

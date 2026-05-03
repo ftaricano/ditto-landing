@@ -1,0 +1,35 @@
+@import './tokens.css';
+@import './reset.css';
+@import './typography.css';
+
+#root {
+  min-height: 100vh;
+}
+
+.skip-link {
+  background: var(--ditto-ink);
+  border-radius: var(--ditto-corner-pill);
+  color: var(--ditto-paper);
+  left: var(--ditto-space-md);
+  padding: var(--ditto-space-sm) var(--ditto-space-md);
+  position: fixed;
+  top: var(--ditto-space-md);
+  transform: translateY(-140%);
+  transition: transform var(--ditto-dur-fast) var(--ditto-ease-out);
+  z-index: 1000;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ditto-signal-500);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--ditto-signal-100);
+  color: var(--ditto-ink);
+}
+

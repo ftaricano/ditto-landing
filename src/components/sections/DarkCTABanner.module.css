@@ -1,0 +1,42 @@
+.section {
+  padding-block: var(--ditto-space-4xl);
+}
+
+.outer {
+  max-width: 1320px;
+}
+
+.banner {
+  background: var(--ditto-ink);
+  border-radius: var(--ditto-corner-xl);
+  color: var(--ditto-text-on-ink);
+  min-height: clamp(420px, 50vw, 620px);
+  overflow: hidden;
+  padding: clamp(96px, 14vw, 200px) var(--ditto-page-margin);
+  position: relative;
+}
+
+.content {
+  display: grid;
+  gap: var(--ditto-space-lg);
+  max-width: 680px;
+  position: relative;
+  z-index: 1;
+}
+
+.content p,
+.actions span {
+  color: var(--ditto-text-on-ink-secondary);
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ditto-space-md);
+}
+
+.actions span {
+  font-size: var(--ditto-text-body-sm);
+}
+

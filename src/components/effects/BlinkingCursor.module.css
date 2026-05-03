@@ -1,0 +1,36 @@
+.cursor {
+  background: var(--ditto-signal-500);
+  display: inline-block;
+  height: 1em;
+  margin-left: 0.08em;
+  transform: translateY(0.08em) scaleY(1.08);
+  vertical-align: -0.05em;
+  width: 0.52ch;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cursor {
+    animation:
+      cursorReveal 0ms linear 1200ms both,
+      blink 1s steps(2, jump-none) 1200ms infinite;
+    opacity: 0;
+  }
+}
+
+@keyframes cursorReveal {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 0;
+  }
+}

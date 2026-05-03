@@ -1,0 +1,104 @@
+.inner {
+  display: grid;
+  gap: var(--ditto-space-2xl);
+}
+
+.heading {
+  display: grid;
+  gap: var(--ditto-space-md);
+  justify-items: center;
+  margin-inline: auto;
+  max-width: 760px;
+  text-align: center;
+}
+
+.tabs {
+  background: var(--ditto-button-secondary-bg);
+  border: 1px solid var(--ditto-outline-variant);
+  border-radius: var(--ditto-corner-pill);
+  display: flex;
+  gap: var(--ditto-space-xs);
+  justify-self: center;
+  padding: var(--ditto-space-xs);
+}
+
+.tabs button {
+  background: transparent;
+  border-radius: var(--ditto-corner-pill);
+  color: var(--ditto-text-secondary);
+  cursor: pointer;
+  font-weight: 600;
+  min-width: 120px;
+  padding: 12px 18px;
+}
+
+.tabs button[aria-selected='true'] {
+  background: var(--ditto-paper);
+  box-shadow: var(--ditto-shadow-sm);
+  color: var(--ditto-text-primary);
+}
+
+.panel {
+  align-items: center;
+  display: grid;
+  gap: var(--ditto-space-4xl);
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .panel {
+    animation: panelIn var(--ditto-dur-base) var(--ditto-ease-out) both;
+  }
+}
+
+@keyframes panelIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.copy {
+  display: grid;
+  gap: var(--ditto-space-md);
+}
+
+.audience {
+  color: var(--ditto-signal-700);
+  font-family: var(--ditto-font-mono);
+  font-size: var(--ditto-text-caption);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.copy strong {
+  color: var(--ditto-ink);
+  font-family: var(--ditto-font-mono);
+  font-size: var(--ditto-text-h3);
+}
+
+.copy ul {
+  color: var(--ditto-text-secondary);
+  display: grid;
+  gap: var(--ditto-space-xs);
+  margin: 0;
+  padding-left: var(--ditto-space-lg);
+}
+
+@media (max-width: 900px) {
+  .panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .tabs {
+    justify-self: stretch;
+    overflow-x: auto;
+  }
+}

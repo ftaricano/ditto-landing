@@ -1,0 +1,36 @@
+.cursor {
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transition: opacity var(--ditto-dur-fast) var(--ditto-ease-out);
+  will-change: transform;
+  z-index: 100;
+}
+
+.cursor[data-visible='true'] {
+  opacity: 1;
+}
+
+.content {
+  align-items: center;
+  background: var(--ditto-paper);
+  border: 1px solid var(--ditto-outline-variant);
+  border-radius: var(--ditto-corner-pill);
+  box-shadow: var(--ditto-shadow-md);
+  color: var(--ditto-ink);
+  display: flex;
+  font-weight: 600;
+  gap: var(--ditto-space-xs);
+  padding: 10px 16px 10px 12px;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+@media (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}
+

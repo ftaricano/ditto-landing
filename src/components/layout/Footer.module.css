@@ -1,0 +1,131 @@
+.footer {
+  overflow: hidden;
+  padding-block: var(--ditto-space-3xl) var(--ditto-space-xl);
+}
+
+.inner {
+  display: grid;
+  gap: var(--ditto-space-3xl);
+}
+
+.brand {
+  display: grid;
+  gap: var(--ditto-space-sm);
+}
+
+.logo {
+  align-items: center;
+  display: inline-flex;
+  font-weight: 600;
+  gap: 0.08em;
+  justify-self: start;
+}
+
+.logo span:last-child {
+  background: var(--ditto-signal-500);
+  height: 1.1em;
+  width: 0.42ch;
+}
+
+.newsletter {
+  border-block: 1px solid var(--ditto-outline-variant);
+  display: grid;
+  gap: var(--ditto-space-sm);
+  padding-block: var(--ditto-space-xl);
+}
+
+.newsletter label {
+  font-weight: 600;
+}
+
+.newsletter div {
+  display: flex;
+  gap: var(--ditto-space-sm);
+  max-width: 560px;
+}
+
+.newsletter input {
+  border: 1px solid var(--ditto-outline-strong);
+  border-radius: var(--ditto-corner-pill);
+  flex: 1;
+  min-height: 46px;
+  min-width: 0;
+  padding-inline: var(--ditto-space-md);
+}
+
+.newsletter button {
+  background: var(--ditto-ink);
+  border-radius: var(--ditto-corner-pill);
+  color: var(--ditto-paper);
+  cursor: pointer;
+  font-weight: 600;
+  min-height: 46px;
+  padding-inline: var(--ditto-space-lg);
+}
+
+.newsletter p {
+  font-size: var(--ditto-text-body-sm);
+}
+
+.links {
+  display: grid;
+  gap: var(--ditto-space-xl);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.links div {
+  display: grid;
+  gap: var(--ditto-space-sm);
+}
+
+.links h3 {
+  font-size: var(--ditto-text-body);
+}
+
+.links a {
+  color: var(--ditto-text-secondary);
+  font-size: var(--ditto-text-body-sm);
+}
+
+.bottom {
+  color: var(--ditto-text-tertiary);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--ditto-text-body-sm);
+  gap: var(--ditto-space-md);
+  justify-content: space-between;
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo span:last-child {
+    animation: blink 1s steps(2, jump-none) infinite;
+  }
+}
+
+@media (max-width: 767px) {
+  .links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .newsletter div {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .links {
+    grid-template-columns: 1fr;
+  }
+}

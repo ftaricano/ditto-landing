@@ -1,0 +1,60 @@
+.button {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: var(--ditto-corner-pill);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: var(--ditto-text-body);
+  font-weight: 500;
+  gap: var(--ditto-space-xs);
+  justify-content: center;
+  line-height: 1;
+  min-height: 44px;
+  padding: 13px 22px;
+  transition:
+    background var(--ditto-dur-snap) var(--ditto-ease-out),
+    border-color var(--ditto-dur-snap) var(--ditto-ease-out),
+    box-shadow var(--ditto-dur-snap) var(--ditto-ease-out),
+    transform var(--ditto-dur-snap) var(--ditto-ease-out);
+  white-space: nowrap;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.primary {
+  background: var(--ditto-button-primary-bg);
+  color: var(--ditto-button-primary-fg);
+}
+
+.primary:hover {
+  background: var(--ditto-button-primary-hover);
+}
+
+.secondary {
+  background: var(--ditto-button-secondary-bg);
+  border-color: var(--ditto-outline-variant);
+  color: var(--ditto-button-secondary-fg);
+}
+
+.secondary:hover {
+  background: rgba(10, 14, 20, 0.07);
+}
+
+.accent {
+  background: var(--ditto-button-accent-bg);
+  color: var(--ditto-button-accent-fg);
+}
+
+.accent:hover {
+  background: var(--ditto-button-accent-hover);
+  box-shadow: var(--ditto-shadow-glow-signal);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--ditto-text-primary);
+  padding-inline: var(--ditto-space-md);
+}
+

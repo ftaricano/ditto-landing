@@ -1,0 +1,93 @@
+.inner {
+  display: grid;
+  gap: var(--ditto-space-3xl);
+}
+
+.heading {
+  display: grid;
+  gap: var(--ditto-space-md);
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: var(--ditto-grid-gutter);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  animation: none;
+  background: var(--ditto-paper);
+  border: 1px solid var(--ditto-outline-variant);
+  border-radius: var(--ditto-corner-xl);
+  display: grid;
+  gap: var(--ditto-space-md);
+  justify-items: center;
+  min-height: 280px;
+  padding: var(--ditto-space-2xl);
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .card {
+    opacity: 0;
+    transform: translateY(40px) scale(0.8);
+  }
+
+  .card.inView {
+    animation: bounceIn var(--ditto-dur-slow) var(--ditto-ease-snap) both;
+  }
+}
+
+.icon {
+  align-items: center;
+  background:
+    radial-gradient(circle at 60% 35%, color-mix(in srgb, var(--ditto-signal-500) 18%, transparent), transparent 42%),
+    color-mix(in srgb, var(--ditto-noise-300) 24%, transparent);
+  border: 1px solid var(--ditto-outline-variant);
+  border-radius: 50%;
+  color: var(--ditto-signal-700);
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  width: 120px;
+}
+
+.card p {
+  max-width: 280px;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1.04);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: var(--ditto-space-sm);
+    scroll-snap-type: x mandatory;
+  }
+
+  .card {
+    flex: 0 0 min(82vw, 320px);
+    min-height: 250px;
+    scroll-snap-align: center;
+  }
+
+  .icon {
+    height: 88px;
+    width: 88px;
+  }
+}

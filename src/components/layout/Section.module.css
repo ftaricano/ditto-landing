@@ -1,0 +1,30 @@
+.section {
+  overflow-x: clip;
+  padding-block: clamp(120px, 18vw, var(--ditto-space-7xl));
+  position: relative;
+}
+
+.section > div {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity var(--ditto-dur-slow) var(--ditto-ease-out),
+    transform var(--ditto-dur-slow) var(--ditto-ease-out);
+}
+
+.section[data-revealed='true'] > div {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dark {
+  color: var(--ditto-text-on-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section > div {
+    opacity: 1;
+    transform: none;
+  }
+}
+
