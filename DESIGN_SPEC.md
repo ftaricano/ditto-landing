@@ -6,7 +6,7 @@ domain: design
 tags: [ditto, landing-page, design-spec, antigravity-language, react]
 created: 2026-05-02
 status: draft
-source_design_language: /Users/jarvis/clawd/second-brain/reference/design/google-antigravity-design-extraction.md
+source_design_language: /Users/jarvis/jarvis-hub/second-brain/reference/design/google-antigravity-design-extraction.md
 ---
 
 # Ditto — Landing Page Design Spec
@@ -809,7 +809,7 @@ Resolver estes antes da Fase 0 evita retrabalho.
 
 ## 13. Referências
 
-- **Source design language:** `/Users/jarvis/clawd/second-brain/reference/design/google-antigravity-design-extraction.md`
+- **Source design language:** `/Users/jarvis/jarvis-hub/second-brain/reference/design/google-antigravity-design-extraction.md`
 - **Antigravity live:** https://antigravity.google/
 - **Inter Variable:** https://rsms.me/inter/
 - **Lucide:** https://lucide.dev/
