@@ -3,7 +3,7 @@ title: "Ditto Landing — QA Review"
 type: review
 project: ditto-landing
 reviewer: claude-acp (4 parallel review lanes)
-spec: /Users/jarvis/clawd/projects/ditto-landing/DESIGN_SPEC.md
+spec: /Users/jarvis/jarvis-hub/projects/ditto-landing/DESIGN_SPEC.md
 date: 2026-05-02
 status: pass-with-blockers
 ---

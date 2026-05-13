@@ -3,8 +3,8 @@ title: "Ditto Landing — QA Review (Sprint 2 re-score)"
 type: review
 project: ditto-landing
 reviewer: claude-acp (single-pass re-score after Sprint 1 fixes)
-spec: /Users/jarvis/clawd/projects/ditto-landing/DESIGN_SPEC.md
-prior_review: /Users/jarvis/clawd/projects/ditto-landing/QA_REVIEW.md
+spec: /Users/jarvis/jarvis-hub/projects/ditto-landing/DESIGN_SPEC.md
+prior_review: /Users/jarvis/jarvis-hub/projects/ditto-landing/QA_REVIEW.md
 date: 2026-05-02
 status: pass
 ---
